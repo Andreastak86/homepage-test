@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="no">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Min første nettside</title>
+        <link rel="stylesheet" href="styles.css" />
+    </head>
+    <body>
+        <header>
+            <h1>Portfolio for Andreas Takvam</h1>
+        </header>
+
+        <nav>
+            <a href="#hjem">Hjem</a>
+            <a href="#om-meg">Om meg</a>
+            <a href="#prosjekter">Prosjekter</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <div class="container">
+            <section id="hjem">
+                <h2>Hjem</h2>
+                <p>
+                    Velkommen til min nettside! Dette er en side jeg har laget
+                    med frontend og backend teknologi.
+                    <br />
+                    Jeg er interessert i it-utvikling og programmering, og jeg
+                    ønsker å lære mer om webutvikling og hvordan lage nettsider.
+                </p>
+            </section>
+
+            <section id="om-meg">
+                <h2>Om meg</h2>
+                <p>
+                    Jeg er en mann på 38 år som lærer meg webutvikling. Jeg har
+                    erfaring med html, css og javascript. Jeg er også
+                    interessert i backend utvikling.<br />
+                    Håper du ønsker å komme i kontakt med meg, legg gjerne igjen
+                    en melding nederst påm siden min.
+                </p>
+                <div class="bilde-container">
+                    <img
+                        src="/AndreasT.png"
+                        height="200"
+                        width="200"
+                        alt="Plassholderbilde"
+                    />
+                </div>
+            </section>
+
+            <section id="prosjekter">
+                <h2>Mine prosjekter</h2>
+                <div class="prosjekt-kort">
+                    <h3>Fargevelger</h3>
+                    <p>
+                        Jeg har laget et prosjekt som endrer farger mens en
+                        trykker på en knapp
+                    </p>
+                </div>
+                <div class="prosjekt-kort">
+                    <h3>Kalkulator</h3>
+                    <p>
+                        Har også laget en kalkultor som jeg synes ble kjempe kul
+                    </p>
+                </div>
+                <div class="prosjekt-kort">
+                    <h3>Mine hobbier</h3>
+                    <p>
+                        Jeg lagde en side med html og css som viser fram bilder
+                        av biler jeg liker.
+                    </p>
+                </div>
+            </section>
+
+            <section id="kontakt">
+                <h2>Kontakt meg</h2>
+                <form id="kontaktForm">
+                    <div class="form-gruppe">
+                        <label for="navn">Navn:</label>
+                        <input type="text" id="navn" name="navn" required />
+                    </div>
+                    <div class="form-gruppe">
+                        <label for="epost">E-post:</label>
+                        <input type="email" id="epost" name="epost" required />
+                    </div>
+                    <div class="form-gruppe">
+                        <label for="melding">Melding:</label>
+                        <textarea
+                            id="melding"
+                            name="melding"
+                            rows="5"
+                            required
+                        ></textarea>
+                    </div>
+                    <button type="submit">Send melding</button>
+                </form>
+            </section>
+        </div>
+
+        <footer>
+            <p>&copy; 2025 Andreas Takvam sin nettside</p>
+        </footer>
+        <script src="https://unpkg.com/@supabase/supabase-js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>

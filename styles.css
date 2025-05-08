@@ -1,0 +1,153 @@
+/* Grunnleggende stilsetting */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+    line-height: 1.6;
+}
+
+/* Header-stil */
+header {
+    background-color: darkblue;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Navigasjon */
+nav {
+    background-color: rgb(71, 65, 202);
+    padding: 10px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 5px 10px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+}
+
+nav a:hover {
+    background-color: #555;
+    border-radius: 3px;
+}
+
+/* Hovedinnhold */
+.container {
+    max-width: 1000px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+section {
+    background-color: white;
+    margin-bottom: 30px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 10px;
+}
+
+/* Bilde-container */
+.bilde-container {
+    text-align: center;
+    margin: 20px 0;
+    margin-top: 40px;
+}
+
+.bilde-container img {
+    max-width: 100%;
+    border-radius: 5px;
+    /* box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); */
+}
+
+/* Prosjektkort */
+.prosjekt-kort {
+    background-color: #f9f9f9;
+    border-left: 4px solid #444;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 3px;
+}
+
+.prosjekt-kort h3 {
+    color: #444;
+    margin-top: 0;
+}
+
+/* Kontaktskjema */
+form {
+    display: grid;
+    gap: 15px;
+}
+
+.form-gruppe {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+    font-family: inherit;
+}
+
+button {
+    background-color: #444;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+/* Footer */
+footer {
+    background-color: #333fff;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+/* Responsivt design */
+@media (max-width: 768px) {
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+
+    nav a {
+        margin: 5px 0;
+        padding: 10px;
+    }
+
+    .container {
+        padding: 0 10px;
+    }
+}
